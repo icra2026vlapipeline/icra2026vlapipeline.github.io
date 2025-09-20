@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Data to Decisions: VLA Pipelines for Real Robots - ICRA 2026 Workshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ICRA 2026</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#speakers" class="nav-link">Speakers</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#tracks" class="nav-link">Tracks</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#paper-track" class="dropdown-link">Paper Track</a></li>
+                        <li><a href="#competition-track" class="dropdown-link">Competition Track</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#program" class="nav-link">Program</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#organizers" class="nav-link">Organizers</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">From Data to Decisions: VLA Pipelines for Real Robots</h1>
+                <p class="hero-subtitle">ICRA 2026 Workshop</p>
+                <div class="hero-meta">
+                    <p class="workshop-date">2026 IEEE ICRA Workshop</p>
+                    <p class="workshop-location">Location & Date TBA</p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#paper-track" class="btn btn-primary">Submit Paper</a>
+                    <a href="#competition-track" class="btn btn-secondary">Join Competition</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-graphic">
+                    <div class="floating-card card-1">Vision</div>
+                    <div class="floating-card card-2">Language</div>
+                    <div class="floating-card card-3">Action</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Abstract Section -->
+    <section class="abstract-section">
+        <div class="container">
+            <h2 class="section-title">Abstract</h2>
+            <div class="abstract-content">
+                <p>Vision-Language-Action (VLA) models have emerged as a promising paradigm for building generally capable robot agents. Leveraging scalable teleoperation, simulation, and web-scale video data, as well as pre-trained vision and language models, these systems have demonstrated impressive generalization and instruction-following capability across diverse manipulation tasks.</p>
+                
+                <p>However, their real-world impact remains limited: most pipelines lack rigorous data curation, principled training regimes, and standardized evaluation, leading to inconsistent performance and safety concerns on physical robots. Meanwhile, performance on real robots is dictated by the underlying "data engine", highlighting the importance of scalable data collection, domain randomization, procedural synthesis, and human-in-the-loop feedback.</p>
+                
+                <p>This workshop aims to catalyze progress by examining the entire end-to-end VLA pipeline, from scalable data collection and systematic curation to training strategies and inference-time reasoning. A core focus will be on surfacing best practices and establishing shared metrics for generalization and safety.</p>
+                
+                <div class="key-questions">
+                    <h3>Guiding Questions</h3>
+                    <ul class="key-topics">
+                        <li>How can we design scalable and cost-effective data collection pipelines?</li>
+                        <li>What principles should guide dataset curation for safety and robustness?</li>
+                        <li>How can we integrate domain randomization and human feedback into training?</li>
+                        <li>What evaluation metrics enable meaningful VLA model comparison?</li>
+                        <li>How should we balance reasoning, grounding, and real-time control?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Dates -->
+    <section class="dates-section">
+        <div class="container">
+            <h2 class="section-title">Important Dates</h2>
+            <div class="dates-grid">
+                <div class="date-card">
+                    <div class="date-icon">📄</div>
+                    <h3>Paper Submission</h3>
+                    <p class="date">March 15, 2026</p>
+                </div>
+                <div class="date-card">
+                    <div class="date-icon">🏆</div>
+                    <h3>Competition Registration</h3>
+                    <p class="date">February 28, 2026</p>
+                </div>
+                <div class="date-card">
+                    <div class="date-icon">📧</div>
+                    <h3>Notification</h3>
+                    <p class="date">April 10, 2026</p>
+                </div>
+                <div class="date-card">
+                    <div class="date-icon">🎪</div>
+                    <h3>Workshop Day</h3>
+                    <p class="date">TBA 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="speakers-section">
+        <div class="container">
+            <h2 class="section-title">Invited Speakers</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <div class="placeholder-image">KP</div>
+                    </div>
+                    <h3 class="speaker-name"><a href="https://kpertsch.github.io/" target="_blank">Karl Pertsch</a></h3>
+                    <p class="speaker-affiliation">Physical Intelligence</p>
+                    <p class="speaker-topic">Vision-Language-Action Models</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <div class="placeholder-image">SS</div>
+                    </div>
+                    <h3 class="speaker-name"><a href="https://shurans.github.io/" target="_blank">Shuran Song</a></h3>
+                    <p class="speaker-affiliation">Stanford University</p>
+                    <p class="speaker-topic">Robotic Perception & Learning</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <div class="placeholder-image">AR</div>
+                    </div>
+                    <h3 class="speaker-name"><a href="https://scholar.google.com/citations?user=AC93g9kAAAAJ&hl=en" target="_blank">Alberto Rodriguez</a></h3>
+                    <p class="speaker-affiliation">Boston Dynamics</p>
+                    <p class="speaker-topic">VLAs in Manufacturing</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <div class="placeholder-image">YZ</div>
+                    </div>
+                    <h3 class="speaker-name"><a href="https://yukezhu.me/" target="_blank">Yuke Zhu</a></h3>
+                    <p class="speaker-affiliation">NVIDIA / UT Austin</p>
+                    <p class="speaker-topic">Embodied AI & Robotics</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <div class="placeholder-image">TO</div>
+                    </div>
+                    <h3 class="speaker-name"><a href="https://ogata-lab.jp/member/ogata.html" target="_blank">Tetsuya Ogata</a></h3>
+                    <p class="speaker-affiliation">Waseda University</p>
+                    <p class="speaker-topic">Multimodal Learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paper Track Section -->
+    <section id="paper-track" class="track-section">
+        <div class="container">
+            <div class="track-header">
+                <div class="track-icon">📄</div>
+                <h2 class="section-title">Paper Track</h2>
+            </div>
+            <div class="track-content">
+                <div class="track-info">
+                    <h3>Call for Extended Abstracts</h3>
+                    <p>We invite <strong>2-page extended abstracts</strong> on any component of the VLA pipeline, including:</p>
+                    <ul>
+                        <li>Data collection, curation, and preprocessing</li>
+                        <li>Training regimes and post-training strategies</li>
+                        <li>Inference-time decision making and reasoning</li>
+                        <li>Evaluation protocols and deployment studies</li>
+                        <li>Safety, robustness, and generalization analysis</li>
+                    </ul>
+                    <p class="track-note">Authors are encouraged to include links to code, configs, and data recipes.</p>
+                </div>
+                <div class="submission-info">
+                    <h3>Submission Guidelines</h3>
+                    <div class="guidelines-grid">
+                        <div class="guideline-item">
+                            <strong>Format:</strong> 2-page extended abstracts
+                        </div>
+                        <div class="guideline-item">
+                            <strong>Review:</strong> Single-blind review
+                        </div>
+                        <div class="guideline-item">
+                            <strong>Deadline:</strong> March 15, 2026
+                        </div>
+                        <div class="guideline-item">
+                            <strong>Submission:</strong> Via CMT (link TBA)
+                        </div>
+                    </div>
+                    <div class="acceptance-info">
+                        <h4>Accepted Papers Receive:</h4>
+                        <ul>
+                            <li>🎯 Lightning spotlights (6-7 min)</li>
+                            <li>📋 Poster presentations</li>
+                            <li>🎤 Selected contributed orals (8-10 min)</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">Submit Extended Abstract</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competition Track Section -->
+    <section id="competition-track" class="track-section competition-track">
+        <div class="container">
+            <div class="track-header">
+                <div class="track-icon">🏆</div>
+                <h2 class="section-title">Competition Track</h2>
+            </div>
+            <div class="track-content">
+                <div class="competition-overview">
+                    <h3>Mobile Manipulation Challenge</h3>
+                    <p>Train on over <strong>10,000 hours of data</strong> and evaluate your VLA systems on standardized mobile manipulation benchmarks.</p>
+                </div>
+                <div class="competition-tracks">
+                    <div class="comp-track-card">
+                        <h4>Simulation Evaluation</h4>
+                        <p>Primary evaluation in high-fidelity simulation environments</p>
+                        <ul>
+                            <li>Mobile manipulation tasks</li>
+                            <li>Standardized benchmarks</li>
+                            <li>10,000+ hours training data</li>
+                            <li>Reproducible evaluation</li>
+                        </ul>
+                    </div>
+                    <div class="comp-track-card optional">
+                        <h4>Real Robot Evaluation</h4>
+                        <p>Potential real robot evaluation (to be confirmed)</p>
+                        <ul>
+                            <li>Selected top teams</li>
+                            <li>On-site demonstration</li>
+                            <li>Hardware provided</li>
+                            <li>Live performance assessment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="data-engine">
+                    <h3>The Data Engine</h3>
+                    <p>Competition teams will have access to:</p>
+                    <div class="data-features">
+                        <div class="data-feature">
+                            <strong>📊 Massive Dataset:</strong> Over 10,000 hours of curated data
+                        </div>
+                        <div class="data-feature">
+                            <strong>🔧 Baselines:</strong> Pre-trained models and training recipes
+                        </div>
+                        <div class="data-feature">
+                            <strong>📋 Evaluation:</strong> Standardized benchmarks and metrics
+                        </div>
+                        <div class="data-feature">
+                            <strong>🤝 Cross-pollination:</strong> Teams encouraged to submit methods papers
+                        </div>
+                    </div>
+                </div>
+                <div class="prizes">
+                    <h3>Prizes</h3>
+                    <div class="prize-grid">
+                        <div class="prize-item">
+                            <div class="prize-medal">🥇</div>
+                            <p>1st Place: $5,000</p>
+                        </div>
+                        <div class="prize-item">
+                            <div class="prize-medal">🥈</div>
+                            <p>2nd Place: $3,000</p>
+                        </div>
+                        <div class="prize-item">
+                            <div class="prize-medal">🥉</div>
+                            <p>3rd Place: $1,000</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Register for Competition</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="program-section">
+        <div class="container">
+            <h2 class="section-title">Tentative Schedule</h2>
+            <div class="program-container">
+                <div class="program-note">
+                    <p>Detailed program schedule - subject to minor changes</p>
+                </div>
+                <div class="program-schedule">
+                    <div class="session-header morning">
+                        <h3>Morning Session (08:30 - 12:30)</h3>
+                    </div>
+                    <div class="program-item opening">
+                        <div class="time">08:30 - 08:40</div>
+                        <div class="activity">
+                            <div class="activity-title">Opening Remarks</div>
+                            <div class="activity-speaker">Organizers</div>
+                        </div>
+                    </div>
+                    <div class="program-item invited-talk">
+                        <div class="time">08:40 - 09:10</div>
+                        <div class="activity">
+                            <div class="activity-title">Invited Talk 1</div>
+                            <div class="activity-speaker">TBA</div>
+                        </div>
+                    </div>
+                    <div class="program-item invited-talk">
+                        <div class="time">09:10 - 09:40</div>
+                        <div class="activity">
+                            <div class="activity-title">Invited Talk 2</div>
+                            <div class="activity-speaker">TBA</div>
+                        </div>
+                    </div>
+                    <div class="program-item invited-talk">
+                        <div class="time">09:40 - 10:10</div>
+                        <div class="activity">
+                            <div class="activity-title">Invited Talk 3</div>
+                            <div class="activity-speaker">TBA</div>
+                        </div>
+                    </div>
+                    <div class="program-item panel">
+                        <div class="time">10:10 - 11:00</div>
+                        <div class="activity">
+                            <div class="activity-title">Panel Discussion: Building Reliable VLA Pipelines</div>
+                            <div class="activity-speaker">Moderator + Panelists</div>
+                        </div>
+                    </div>
+                    <div class="program-item break">
+                        <div class="time">11:00 - 11:30</div>
+                        <div class="activity">
+                            <div class="activity-title">Coffee Break</div>
+                        </div>
+                    </div>
+                    <div class="program-item competition">
+                        <div class="time">11:30 - 12:00</div>
+                        <div class="activity">
+                            <div class="activity-title">Competition Track: Overview, Baselines & Evaluation</div>
+                            <div class="activity-speaker">Starter kit and submission flow</div>
+                        </div>
+                    </div>
+                    <div class="program-item spotlight">
+                        <div class="time">12:00 - 12:30</div>
+                        <div class="activity">
+                            <div class="activity-title">Lightning Spotlights (Accepted Papers)</div>
+                            <div class="activity-speaker">3-4 papers, 6-7 min each</div>
+                        </div>
+                    </div>
+                    <div class="program-item break">
+                        <div class="time">12:30 - 13:30</div>
+                        <div class="activity">
+                            <div class="activity-title">Lunch Break</div>
+                        </div>
+                    </div>
+                    
+                    <div class="session-header afternoon">
+                        <h3>Afternoon Session (13:30 - 17:30)</h3>
+                    </div>
+                    <div class="program-item invited-talk">
+                        <div class="time">13:30 - 14:00</div>
+                        <div class="activity">
+                            <div class="activity-title">Invited Talk 4</div>
+                            <div class="activity-speaker">TBA</div>
+                        </div>
+                    </div>
+                    <div class="program-item invited-talk">
+                        <div class="time">14:00 - 14:30</div>
+                        <div class="activity">
+                            <div class="activity-title">Invited Talk 5</div>
+                            <div class="activity-speaker">TBA</div>
+                        </div>
+                    </div>
+                    <div class="program-item break">
+                        <div class="time">14:30 - 15:00</div>
+                        <div class="activity">
+                            <div class="activity-title">Coffee Break</div>
+                        </div>
+                    </div>
+                    <div class="program-item invited-talk">
+                        <div class="time">15:00 - 15:30</div>
+                        <div class="activity">
+                            <div class="activity-title">Invited Talk 6</div>
+                            <div class="activity-speaker">TBA</div>
+                        </div>
+                    </div>
+                    <div class="program-item contributed">
+                        <div class="time">15:30 - 16:00</div>
+                        <div class="activity">
+                            <div class="activity-title">Contributed Talks (Selected Papers)</div>
+                            <div class="activity-speaker">Selected papers (8-10 min each)</div>
+                        </div>
+                    </div>
+                    <div class="program-item poster">
+                        <div class="time">16:00 - 16:45</div>
+                        <div class="activity">
+                            <div class="activity-title">Poster Session</div>
+                            <div class="activity-speaker">Interactive posters and demos</div>
+                        </div>
+                    </div>
+                    <div class="program-item competition">
+                        <div class="time">16:45 - 17:15</div>
+                        <div class="activity">
+                            <div class="activity-title">Competition Winner Talk</div>
+                            <div class="activity-speaker">Winning team presentation</div>
+                        </div>
+                    </div>
+                    <div class="program-item closing">
+                        <div class="time">17:15 - 17:30</div>
+                        <div class="activity">
+                            <div class="activity-title">Awards & Closing Remarks</div>
+                            <div class="activity-speaker">Best Poster / Competition</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers" class="organizers-section">
+        <div class="container">
+            <h2 class="section-title">Organizers</h2>
+            <div class="organizer-note">
+                <p><strong>*</strong> indicates the primary contact person</p>
+            </div>
+            <div class="organizers-grid">
+                <div class="organizer-card primary-contact">
+                    <div class="organizer-image">
+                        <div class="placeholder-image">YW</div>
+                    </div>
+                    <h3 class="organizer-name"><a href="https://kristery.github.io/" target="_blank">Yueh-Hua Wu*</a></h3>
+                    <p class="organizer-affiliation">AIRoA</p>
+                    <p class="organizer-email">kris.wu@airoa.org</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <div class="placeholder-image">KO</div>
+                    </div>
+                    <h3 class="organizer-name"><a href="https://keiohta.github.io/" target="_blank">Kei Ota</a></h3>
+                    <p class="organizer-affiliation">AIRoA</p>
+                    <p class="organizer-email">kei.ota@airoa.org</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <div class="placeholder-image">JY</div>
+                    </div>
+                    <h3 class="organizer-name"><a href="https://junjungoal.github.io/" target="_blank">Jun Yamada</a></h3>
+                    <p class="organizer-affiliation">University of Oxford</p>
+                    <p class="organizer-email">jyamada@robots.ox.ac.uk</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <div class="placeholder-image">IP</div>
+                    </div>
+                    <h3 class="organizer-name"><a href="https://ori.ox.ac.uk/people/ingmar-posner/" target="_blank">Ingmar Posner</a></h3>
+                    <p class="organizer-affiliation">University of Oxford</p>
+                    <p class="organizer-email">ingmar.posner@pmb.ox.ac.uk</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <div class="placeholder-image">TM</div>
+                    </div>
+                    <h3 class="organizer-name"><a href="https://trail.t.u-tokyo.ac.jp/author/tatsuya-matsushima" target="_blank">Tatsuya Matsushima</a></h3>
+                    <p class="organizer-affiliation">University of Tokyo</p>
+                    <p class="organizer-email">matsushima@weblab.t.u-tokyo.ac.jp</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <div class="placeholder-image">TO</div>
+                    </div>
+                    <h3 class="organizer-name"><a href="https://ogata-lab.jp/member/ogata.html" target="_blank">Tetsuya Ogata</a></h3>
+                    <p class="organizer-affiliation">Waseda University</p>
+                    <p class="organizer-email">ogata@waseda.jp</p>
+                </div>
+                <div class="organizer-card">
+                    <div class="organizer-image">
+                        <div class="placeholder-image">IS</div>
+                    </div>
+                    <h3 class="organizer-name"><a href="https://ishikasingh.github.io/" target="_blank">Ishika Singh</a></h3>
+                    <p class="organizer-affiliation">University of Southern California</p>
+                    <p class="organizer-email">ishikasi@usc.edu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>ICRA 2026 VLA Pipeline Workshop</h3>
+                    <p>Vision-Language-Action Pipeline: Bridging Perception and Action in Robotics</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#speakers">Speakers</a></li>
+                        <li><a href="#paper-track">Paper Track</a></li>
+                        <li><a href="#competition-track">Competition</a></li>
+                        <li><a href="#organizers">Organizers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>For questions, please contact the organizers</p>
+                    <p>Email: workshop@icra2026vla.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ICRA VLA Pipeline Workshop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
