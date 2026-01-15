@@ -35,10 +35,15 @@
                     <a href="#organizers" class="nav-link">Organizers</a>
                 </li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+                    <span class="icon">🌙</span>
+                </button>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
         </div>
     </nav>
@@ -47,11 +52,11 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">From Data to Decisions: VLA Pipelines for Real Robots</h1>
+                <h1 class="hero-title">From Data to Decisions: <span class="gradient-text">VLA Pipelines</span> for Real Robots</h1>
                 <p class="hero-subtitle">ICRA 2026 Workshop</p>
                 <div class="hero-meta">
-                    <p class="workshop-date">2026 IEEE ICRA Workshop</p>
-                    <p class="workshop-location">Location & Date TBA</p>
+                    <p class="workshop-date">📅 2026 IEEE ICRA Workshop</p>
+                    <p class="workshop-location">📍 Location & Date TBA</p>
                 </div>
                 <div class="hero-buttons">
                     <a href="#paper-track" class="btn btn-primary">Submit Paper</a>
@@ -60,9 +65,15 @@
             </div>
             <div class="hero-visual">
                 <div class="hero-graphic">
-                    <div class="floating-card card-1">Vision</div>
-                    <div class="floating-card card-2">Language</div>
-                    <div class="floating-card card-3">Action</div>
+                    <div class="floating-card card-1">
+                        <span class="card-icon">👁️</span> Vision
+                    </div>
+                    <div class="floating-card card-2">
+                        <span class="card-icon">💬</span> Language
+                    </div>
+                    <div class="floating-card card-3">
+                        <span class="card-icon">🤖</span> Action
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,16 +90,6 @@
                 
                 <p>This workshop aims to catalyze progress by examining the entire end-to-end VLA pipeline, from scalable data collection and systematic curation to training strategies and inference-time reasoning. A core focus will be on surfacing best practices and establishing shared metrics for generalization and safety.</p>
                 
-                <div class="key-questions">
-                    <h3>Guiding Questions</h3>
-                    <ul class="key-topics">
-                        <li>How can we design scalable and cost-effective data collection pipelines?</li>
-                        <li>What principles should guide dataset curation for safety and robustness?</li>
-                        <li>How can we integrate domain randomization and human feedback into training?</li>
-                        <li>What evaluation metrics enable meaningful VLA model comparison?</li>
-                        <li>How should we balance reasoning, grounding, and real-time control?</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </section>
@@ -131,7 +132,7 @@
                     <div class="speaker-image">
                         <div class="placeholder-image">KP</div>
                     </div>
-                    <h3 class="speaker-name"><a href="https://kpertsch.github.io/" target="_blank">Karl Pertsch</a></h3>
+                    <h3 class="speaker-name"><a href="https://kpertsch.github.io/" target="_blank" rel="noopener noreferrer">Karl Pertsch</a></h3>
                     <p class="speaker-affiliation">Physical Intelligence</p>
                     <p class="speaker-topic">Vision-Language-Action Models</p>
                 </div>
@@ -139,7 +140,7 @@
                     <div class="speaker-image">
                         <div class="placeholder-image">SS</div>
                     </div>
-                    <h3 class="speaker-name"><a href="https://shurans.github.io/" target="_blank">Shuran Song</a></h3>
+                    <h3 class="speaker-name"><a href="https://shurans.github.io/" target="_blank" rel="noopener noreferrer">Shuran Song</a></h3>
                     <p class="speaker-affiliation">Stanford University</p>
                     <p class="speaker-topic">Robotic Perception & Learning</p>
                 </div>
@@ -147,7 +148,7 @@
                     <div class="speaker-image">
                         <div class="placeholder-image">AR</div>
                     </div>
-                    <h3 class="speaker-name"><a href="https://scholar.google.com/citations?user=AC93g9kAAAAJ&hl=en" target="_blank">Alberto Rodriguez</a></h3>
+                    <h3 class="speaker-name"><a href="https://scholar.google.com/citations?user=AC93g9kAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Alberto Rodriguez</a></h3>
                     <p class="speaker-affiliation">Boston Dynamics</p>
                     <p class="speaker-topic">VLAs in Manufacturing</p>
                 </div>
@@ -155,7 +156,7 @@
                     <div class="speaker-image">
                         <div class="placeholder-image">YZ</div>
                     </div>
-                    <h3 class="speaker-name"><a href="https://yukezhu.me/" target="_blank">Yuke Zhu</a></h3>
+                    <h3 class="speaker-name"><a href="https://yukezhu.me/" target="_blank" rel="noopener noreferrer">Yuke Zhu</a></h3>
                     <p class="speaker-affiliation">NVIDIA / UT Austin</p>
                     <p class="speaker-topic">Embodied AI & Robotics</p>
                 </div>
@@ -163,7 +164,7 @@
                     <div class="speaker-image">
                         <div class="placeholder-image">TO</div>
                     </div>
-                    <h3 class="speaker-name"><a href="https://ogata-lab.jp/member/ogata.html" target="_blank">Tetsuya Ogata</a></h3>
+                    <h3 class="speaker-name"><a href="https://ogata-lab.jp/member/ogata.html" target="_blank" rel="noopener noreferrer">Tetsuya Ogata</a></h3>
                     <p class="speaker-affiliation">Waseda University</p>
                     <p class="speaker-topic">Multimodal Learning</p>
                 </div>
@@ -215,7 +216,7 @@
                             <li>🎤 Selected contributed orals (8-10 min)</li>
                         </ul>
                     </div>
-                    <a href="#" class="btn btn-primary">Submit Extended Abstract</a>
+                    <a href="#" class="btn btn-primary btn-spacer">Submit Extended Abstract</a>
                 </div>
             </div>
         </div>
@@ -444,7 +445,7 @@
                     <div class="organizer-image">
                         <div class="placeholder-image">YW</div>
                     </div>
-                    <h3 class="organizer-name"><a href="https://kristery.github.io/" target="_blank">Yueh-Hua Wu*</a></h3>
+                    <h3 class="organizer-name"><a href="https://kristery.github.io/" target="_blank" rel="noopener noreferrer">Yueh-Hua Wu*</a></h3>
                     <p class="organizer-affiliation">AIRoA</p>
                     <p class="organizer-email">kris.wu@airoa.org</p>
                 </div>
@@ -452,7 +453,7 @@
                     <div class="organizer-image">
                         <div class="placeholder-image">KO</div>
                     </div>
-                    <h3 class="organizer-name"><a href="https://keiohta.github.io/" target="_blank">Kei Ota</a></h3>
+                    <h3 class="organizer-name"><a href="https://keiohta.github.io/" target="_blank" rel="noopener noreferrer">Kei Ota</a></h3>
                     <p class="organizer-affiliation">AIRoA</p>
                     <p class="organizer-email">kei.ota@airoa.org</p>
                 </div>
@@ -460,7 +461,7 @@
                     <div class="organizer-image">
                         <div class="placeholder-image">JY</div>
                     </div>
-                    <h3 class="organizer-name"><a href="https://junjungoal.github.io/" target="_blank">Jun Yamada</a></h3>
+                    <h3 class="organizer-name"><a href="https://junjungoal.github.io/" target="_blank" rel="noopener noreferrer">Jun Yamada</a></h3>
                     <p class="organizer-affiliation">University of Oxford</p>
                     <p class="organizer-email">jyamada@robots.ox.ac.uk</p>
                 </div>
@@ -468,7 +469,7 @@
                     <div class="organizer-image">
                         <div class="placeholder-image">IP</div>
                     </div>
-                    <h3 class="organizer-name"><a href="https://ori.ox.ac.uk/people/ingmar-posner/" target="_blank">Ingmar Posner</a></h3>
+                    <h3 class="organizer-name"><a href="https://ori.ox.ac.uk/people/ingmar-posner/" target="_blank" rel="noopener noreferrer">Ingmar Posner</a></h3>
                     <p class="organizer-affiliation">University of Oxford</p>
                     <p class="organizer-email">ingmar.posner@pmb.ox.ac.uk</p>
                 </div>
@@ -476,7 +477,7 @@
                     <div class="organizer-image">
                         <div class="placeholder-image">TM</div>
                     </div>
-                    <h3 class="organizer-name"><a href="https://trail.t.u-tokyo.ac.jp/author/tatsuya-matsushima" target="_blank">Tatsuya Matsushima</a></h3>
+                    <h3 class="organizer-name"><a href="https://trail.t.u-tokyo.ac.jp/author/tatsuya-matsushima" target="_blank" rel="noopener noreferrer">Tatsuya Matsushima</a></h3>
                     <p class="organizer-affiliation">University of Tokyo</p>
                     <p class="organizer-email">matsushima@weblab.t.u-tokyo.ac.jp</p>
                 </div>
@@ -484,7 +485,7 @@
                     <div class="organizer-image">
                         <div class="placeholder-image">TO</div>
                     </div>
-                    <h3 class="organizer-name"><a href="https://ogata-lab.jp/member/ogata.html" target="_blank">Tetsuya Ogata</a></h3>
+                    <h3 class="organizer-name"><a href="https://ogata-lab.jp/member/ogata.html" target="_blank" rel="noopener noreferrer">Tetsuya Ogata</a></h3>
                     <p class="organizer-affiliation">Waseda University</p>
                     <p class="organizer-email">ogata@waseda.jp</p>
                 </div>
@@ -492,7 +493,7 @@
                     <div class="organizer-image">
                         <div class="placeholder-image">IS</div>
                     </div>
-                    <h3 class="organizer-name"><a href="https://ishikasingh.github.io/" target="_blank">Ishika Singh</a></h3>
+                    <h3 class="organizer-name"><a href="https://ishikasingh.github.io/" target="_blank" rel="noopener noreferrer">Ishika Singh</a></h3>
                     <p class="organizer-affiliation">University of Southern California</p>
                     <p class="organizer-email">ishikasi@usc.edu</p>
                 </div>
@@ -521,7 +522,7 @@
                 <div class="footer-contact">
                     <h4>Contact</h4>
                     <p>For questions, please contact the organizers</p>
-                    <p>Email: workshop@icra2026vla.org</p>
+                    <p>Email: icra2026vlapipeline@gmail.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -530,6 +531,8 @@
         </div>
     </footer>
 
+    <div id="toast-container"></div>
     <script src="script.js"></script>
 </body>
+
 </html>
