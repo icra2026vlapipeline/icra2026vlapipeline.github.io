@@ -1308,14 +1308,6 @@ body.dark-theme .speaker-name a:hover, body.dark-theme .organizer-name a:hover {
     color: #4facfe;
 }
 
-.organizer-card.primary-contact {
-    border: 2px solid var(--primary-color);
-    background: linear-gradient(135deg, rgba(79, 172, 254, 0.05), rgba(0, 242, 254, 0.05));
-}
-
-.organizer-card.primary-contact .organizer-image {
-    background: var(--gradient-primary);
-}
 
 /* Footer */
 .footer {
