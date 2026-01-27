@@ -101,26 +101,54 @@
     <section class="dates-section">
         <div class="container">
             <h2 class="section-title">Important Dates</h2>
-            <div class="dates-grid">
-                <div class="date-card">
-                    <div class="date-icon">📄</div>
-                    <h3>Paper Submission</h3>
-                    <p class="date">April 15, 2026</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">
+                        <span class="month">Feb</span>
+                        <span class="day">21</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">🏆</div>
+                        <h3>Competition Registration Opens</h3>
+                        <p>Register your team for the Mobile Manipulation Challenge</p>
+                    </div>
                 </div>
-                <div class="date-card">
-                    <div class="date-icon">🏆</div>
-                    <h3>Competition Registration</h3>
-                    <p class="date">February 21, 2026</p>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">
+                        <span class="month">Apr</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">📄</div>
+                        <h3>Paper Submission Deadline</h3>
+                        <p>Submit your research papers for review</p>
+                    </div>
                 </div>
-                <div class="date-card">
-                    <div class="date-icon">📧</div>
-                    <h3>Paper & Competition Results</h3>
-                    <p class="date">May 1, 2026</p>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">
+                        <span class="month">May</span>
+                        <span class="day">1</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">📧</div>
+                        <h3>Notification of Acceptance</h3>
+                        <p>Paper decisions and competition results announced</p>
+                    </div>
                 </div>
-                <div class="date-card">
-                    <div class="date-icon">🎪</div>
-                    <h3>Workshop Day</h3>
-                    <p class="date">TBA 2026</p>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-date">
+                        <span class="month">Jun</span>
+                        <span class="day">1</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">🎪</div>
+                        <h3>Workshop Day</h3>
+                        <p>Join us at ICRA 2026 in Vienna, Austria</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,7 +161,7 @@
             <div class="speakers-grid">
                 <div class="speaker-card">
                     <div class="speaker-image">
-                        <div class="placeholder-image">KP</div>
+                        <img src="images/karl.webp" alt="Karl Pertsch">
                     </div>
                     <h3 class="speaker-name"><a href="https://kpertsch.github.io/" target="_blank" rel="noopener noreferrer">Karl Pertsch</a></h3>
                     <p class="speaker-affiliation">Physical Intelligence</p>
@@ -141,7 +169,7 @@
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-image">
-                        <div class="placeholder-image">SS</div>
+                        <img src="images/shuran.jpg" alt="Shuran Song">
                     </div>
                     <h3 class="speaker-name"><a href="https://shurans.github.io/" target="_blank" rel="noopener noreferrer">Shuran Song</a></h3>
                     <p class="speaker-affiliation">Stanford University</p>
@@ -149,7 +177,7 @@
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-image">
-                        <div class="placeholder-image">AR</div>
+                        <img src="images/alberto.jpg" alt="Alberto Rodriguez">
                     </div>
                     <h3 class="speaker-name"><a href="https://scholar.google.com/citations?user=AC93g9kAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Alberto Rodriguez</a></h3>
                     <p class="speaker-affiliation">Boston Dynamics</p>
@@ -157,7 +185,7 @@
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-image">
-                        <div class="placeholder-image">YZ</div>
+                        <img src="images/yuke.jpg" alt="Yuke Zhu">
                     </div>
                     <h3 class="speaker-name"><a href="https://yukezhu.me/" target="_blank" rel="noopener noreferrer">Yuke Zhu</a></h3>
                     <p class="speaker-affiliation">NVIDIA / UT Austin</p>
@@ -165,7 +193,7 @@
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-image">
-                        <div class="placeholder-image">TO</div>
+                        <img src="images/tetsuya.jpg" alt="Tetsuya Ogata">
                     </div>
                     <h3 class="speaker-name"><a href="https://ogata-lab.jp/member/ogata.html" target="_blank" rel="noopener noreferrer">Tetsuya Ogata</a></h3>
                     <p class="speaker-affiliation">Waseda University</p>
@@ -242,7 +270,8 @@
                     </div>
                 </div>
                 <div class="competition-tracks">
-                    <div class="comp-track-card">
+                    <div class="comp-track-card simulation">
+                        <div class="track-card-icon">🖥️</div>
                         <h4>Simulation Evaluation</h4>
                         <p>Primary evaluation in high-fidelity simulation environments</p>
                         <ul>
@@ -252,49 +281,69 @@
                             <li>Reproducible evaluation</li>
                         </ul>
                     </div>
-                    <div class="comp-track-card optional">
+                    <div class="comp-track-card real-robot">
+                        <div class="track-card-icon">🤖</div>
                         <h4>Real Robot Evaluation</h4>
-                        <p>Potential real robot evaluation (to be confirmed)</p>
+                        <p>Bi-weekly real robot experiments throughout the competition</p>
                         <ul>
-                            <li>Selected top teams</li>
-                            <li>On-site demonstration</li>
-                            <li>Hardware provided</li>
-                            <li>Live performance assessment</li>
+                            <li>Evaluation videos and data provided for finetuning</li>
+                            <li>Public leaderboard for tracking progress</li>
+                            <li>Private scoring for final ranking</li>
+                            <li>Top 3 teams present at the workshop</li>
                         </ul>
                     </div>
                 </div>
                 <div class="data-engine">
                     <h3>The Data Engine</h3>
-                    <p>Competition teams will have access to:</p>
+                    <p class="data-engine-subtitle">Competition teams will have access to:</p>
                     <div class="data-features">
                         <div class="data-feature">
-                            <strong>📊 Massive Dataset:</strong> Over 10,000 hours of curated data
+                            <div class="data-feature-icon">📊</div>
+                            <div class="data-feature-content">
+                                <strong>Massive Dataset</strong>
+                                <span>Over 10,000 hours of curated data</span>
+                            </div>
                         </div>
                         <div class="data-feature">
-                            <strong>🔧 Baselines:</strong> Pre-trained models and training recipes
+                            <div class="data-feature-icon">🔧</div>
+                            <div class="data-feature-content">
+                                <strong>Baselines</strong>
+                                <span>Pre-trained models and training recipes</span>
+                            </div>
                         </div>
                         <div class="data-feature">
-                            <strong>📋 Evaluation:</strong> Standardized benchmarks and metrics
+                            <div class="data-feature-icon">📋</div>
+                            <div class="data-feature-content">
+                                <strong>Evaluation</strong>
+                                <span>Standardized benchmarks and metrics</span>
+                            </div>
                         </div>
                         <div class="data-feature">
-                            <strong>🤝 Cross-pollination:</strong> Teams encouraged to submit methods papers
+                            <div class="data-feature-icon">🤝</div>
+                            <div class="data-feature-content">
+                                <strong>Cross-pollination</strong>
+                                <span>Teams encouraged to submit methods papers</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="prizes">
                     <h3>Prizes</h3>
                     <div class="prize-grid">
-                        <div class="prize-item">
+                        <div class="prize-item gold">
                             <div class="prize-medal">🥇</div>
-                            <p>1st Place: $1,000</p>
+                            <div class="prize-place">1st Place</div>
+                            <div class="prize-amount">$1,000</div>
                         </div>
-                        <div class="prize-item">
+                        <div class="prize-item silver">
                             <div class="prize-medal">🥈</div>
-                            <p>2nd Place: $500</p>
+                            <div class="prize-place">2nd Place</div>
+                            <div class="prize-amount">$500</div>
                         </div>
-                        <div class="prize-item">
+                        <div class="prize-item bronze">
                             <div class="prize-medal">🥉</div>
-                            <p>3rd Place: $300</p>
+                            <div class="prize-place">3rd Place</div>
+                            <div class="prize-amount">$300</div>
                         </div>
                     </div>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSet4-Fm3FuaKdod-7IsyQY9J5QNsU_sYLlUaPMJLxg0cQHnHQ/viewform?usp=publish-editor" class="btn btn-primary" target="_blank">Register for Competition</a>
