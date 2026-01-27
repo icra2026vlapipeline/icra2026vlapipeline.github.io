@@ -597,17 +597,11 @@ body.dark-theme .btn-secondary {
 
 .speakers-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-@media (max-width: 1200px) {
-    .speakers-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .speakers-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -631,7 +625,7 @@ body.dark-theme .btn-secondary {
 
 .speaker-image {
     width: 100%;
-    height: 220px;
+    height: 260px;
     background: var(--gradient-primary);
     display: flex;
     align-items: center;
@@ -659,9 +653,9 @@ body.dark-theme .btn-secondary {
 }
 
 .speaker-name {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    margin: 1.25rem 0.75rem 0.4rem;
+    margin: 1.25rem 1rem 0.5rem;
     color: var(--text-color);
 }
 
