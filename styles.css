@@ -778,20 +778,35 @@ body.dark-theme .btn-secondary {
 }
 
 .guidelines-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin: 2rem 0;
+    justify-content: center;
 }
 
 .guideline-item {
     background: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
     border-left: 4px solid var(--primary-color);
     box-shadow: 0 4px 10px rgba(0,0,0,0.03);
     color: var(--text-color);
     border: 1px solid var(--border-color);
+    flex: 1 1 auto;
+    min-width: 180px;
+    max-width: 280px;
+    text-align: center;
+}
+
+.guideline-item a,
+.guideline-item a:visited {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.guideline-item a:hover {
+    text-decoration: underline;
 }
 
 .acceptance-info {
