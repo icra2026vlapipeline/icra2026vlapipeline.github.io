@@ -1201,6 +1201,16 @@ body.dark-theme .btn-secondary {
     line-height: 1.5;
 }
 
+.data-feature-content a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.data-feature-content a:hover {
+    color: rgba(255, 255, 255, 0.85);
+}
+
 .prizes {
     grid-column: 1 / -1;
     margin-top: 2rem;
