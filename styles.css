@@ -920,18 +920,31 @@ body.dark-theme .btn-secondary {
 
 .challenge-robot {
     text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.challenge-robot:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .challenge-robot .hsr-robot-img {
-    max-width: 280px;
+    max-width: 260px;
     height: auto;
-    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
 .challenge-robot .robot-caption {
-    margin-top: 1rem;
-    font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.7);
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .comp-track-card {
