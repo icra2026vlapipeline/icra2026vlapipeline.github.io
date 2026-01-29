@@ -863,14 +863,18 @@ body.dark-theme .btn-secondary {
     color: white;
 }
 
-.competition-overview {
-    text-align: center;
+/* Challenge Hero - Main competition intro */
+.challenge-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 3rem;
+    align-items: center;
     margin-bottom: 4rem;
     position: relative;
     z-index: 1;
 }
 
-.competition-overview h3 {
+.challenge-info h3 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     background: linear-gradient(135deg, #fff, rgba(255,255,255,0.8));
@@ -879,27 +883,55 @@ body.dark-theme .btn-secondary {
     background-clip: text;
 }
 
-.competition-overview > p {
+.challenge-tagline {
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.8);
-    max-width: 600px;
-    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 2rem;
+    line-height: 1.6;
 }
 
-.competition-tracks {
+.evaluation-highlights {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    margin-bottom: 5rem;
-    position: relative;
-    z-index: 1;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.competition-tracks.single-track {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+.eval-highlight {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 0.95rem;
+}
+
+.eval-icon {
+    font-size: 1.2rem;
+}
+
+.eval-note {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+}
+
+.challenge-robot {
+    text-align: center;
+}
+
+.challenge-robot .hsr-robot-img {
+    max-width: 280px;
+    height: auto;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+}
+
+.challenge-robot .robot-caption {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .comp-track-card {
@@ -1644,8 +1676,26 @@ body.dark-theme .footer {
         grid-template-columns: 1fr;
     }
     
-    .competition-tracks {
+    .challenge-hero {
         grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .challenge-robot {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+
+    .challenge-robot .hsr-robot-img {
+        max-width: 200px;
+    }
+
+    .evaluation-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .challenge-info h3 {
+        font-size: 1.8rem;
     }
 
     /* Timeline Mobile - horizontal scroll */
