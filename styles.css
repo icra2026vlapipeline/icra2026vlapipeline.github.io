@@ -1549,6 +1549,38 @@ body.dark-theme .speaker-name a:hover, body.dark-theme .organizer-name a:hover {
 }
 
 
+/* Program Committee */
+.committee-section {
+    padding: 80px 0;
+    background: var(--bg-color);
+}
+
+.committee-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.committee-member {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+}
+
+.committee-member:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
 /* Footer */
 .footer {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
