@@ -1885,7 +1885,8 @@ body.dark-theme .footer {
 }
 
 .timeline-content del,
-.guideline-item del {
+.guideline-item del,
+.comp-timeline-date del {
     color: var(--text-light);
     text-decoration-thickness: 2px;
     opacity: 0.7;
