@@ -1883,3 +1883,24 @@ body.dark-theme .footer {
         max-height: 200px;
     }
 }
+
+.timeline-content del,
+.guideline-item del {
+    color: var(--text-light);
+    text-decoration-thickness: 2px;
+    opacity: 0.7;
+    font-weight: 400;
+    margin-right: 2px;
+}
+
+.timeline-date .day del {
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: none;
+    -webkit-text-fill-color: var(--text-light);
+    color: var(--text-light);
+    opacity: 0.7;
+    vertical-align: middle;
+    margin-right: 4px;
+    text-decoration-thickness: 2px;
+}
